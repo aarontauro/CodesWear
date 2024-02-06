@@ -26,7 +26,7 @@ const Login = () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'https://codeswear-aarontauro.vercel.app',
+                'Access-Control-Allow-Origin': 'https://codeswear-one.vercel.app',
             },
             body: JSON.stringify(data),
         })
