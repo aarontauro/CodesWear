@@ -127,6 +127,9 @@ const Slug = ({ addToCart, product, variants, buyNow, error }) => {
                 <button disabled={disabled} className="disabled:bg-pink-300 flex ml-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded" onClick={() => { addToCart(slug, 1, product.price, product.title, product.size, product.color) }}>Add To Cart
                 </button>
               </div>
+              {disabled && <div className='mt-10'>
+                <p className="text-2xl font-semibold text-pink-600 text-center">Currently out of Stock!!</p>
+              </div>}
             </div>
           </div>
         </div>
