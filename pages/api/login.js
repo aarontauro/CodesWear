@@ -12,7 +12,7 @@ const cors = Cors({
 connectToMongo();
 
 export default async (req, res) => {
-     cors(req, res);
+     cors();
 
     if (req.method !== "POST") {
         return res.status(400).json({ message: "Method not allowed" });
