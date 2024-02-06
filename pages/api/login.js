@@ -2,18 +2,10 @@ import connectToMongo from "@/middleware/mongoose";
 import User from "@/models/User";
 import CryptoJS from "crypto-js";
 import jwt from "jsonwebtoken";
-import Cors from 'cors';
-
-const cors = Cors({
-    methods: ['GET', 'POST', 'OPTIONS'], // Add the methods your API route supports
-    origin: 'https://codeswear-aarontauro.vercel.app', // Replace with your actual frontend origin
-  })
 
 connectToMongo();
 
 export default async (req, res) => {
-     cors();
-
     if (req.method !== "POST") {
         return res.status(400).json({ message: "Method not allowed" });
     }
