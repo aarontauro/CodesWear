@@ -25,7 +25,8 @@ const Login = () => {
         const res = await fetch(`http://localhost:3000/api/login`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://codeswear-aarontauro.vercel.app',
             },
             body: JSON.stringify(data),
         })
