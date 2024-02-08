@@ -45,7 +45,7 @@ const MyOrder = ({ order }) => {
                 <button className="flex ml-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded"><Link href={'/orders'}>Track Order</Link></button>
               </div>
             </div>
-            <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400" />
+            <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://www.mgt-commerce.com/astatic/assets/images/article/2023/225/hero.svg?v=1.0.2" />
           </div>
         </div>
       </section>
